@@ -31,8 +31,7 @@
         // Add marker
         addMarker({coords:event.latLng});
       });
-
-
+      
       // Add marker
       var marker = new google.maps.Marker({
         position:{lat:48.8566,lng:2.3522},
@@ -47,26 +46,6 @@
         infoWindow.open(map, marker);
       });
 
-    /*  // Array of markers
-      var markers = [
-        {
-          coords:{lat:42.4668,lng:-70.9495},
-        },
-        {
-          coords:{lat:42.8584,lng:-70.9300},
-          content:'<h1>Amesbury MA</h1>'
-        },
-        {
-          coords:{lat:42.7762,lng:-71.0773}
-        }
-      ];
-
-      // Loop through markers
-      for(var i = 0;i < markers.length;i++){
-        // Add marker
-        addMarker(markers[i]);
-      }
-*/
       // Add Marker Function
       function addMarker(props){
         var marker = new google.maps.Marker({
